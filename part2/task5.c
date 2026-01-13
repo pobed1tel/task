@@ -4,8 +4,8 @@
 int main(){
 
     // 5 задание
-    float q = 12.5;
-    float w = 2.3;
+    float q = 12.5f;
+    float w = 2.3f;
     float e = fmod(q, w);
     printf("%.2f\n", e);
 
