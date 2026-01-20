@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-    // 5 задание
+    // 1 задание
     int a;
     scanf("%d", &a);
 
