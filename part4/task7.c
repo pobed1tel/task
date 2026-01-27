@@ -3,7 +3,7 @@
 #include <time.h>
 
 int main(){
-    // 7 задачник
+    // 7 задача
     srand(time(NULL));
 
     int n;

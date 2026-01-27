@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-    // 6 задачник
+    // 6 задача
 
     char * filename = "data.txt";
     char buffer[256];

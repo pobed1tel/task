@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 int main(){
-    // 7 задачa 2 часть
+    // 8 задачa 2 часть
 
     int rows;
     int cols;
