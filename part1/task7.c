@@ -4,8 +4,7 @@
 
 int main(){
     srand(time(NULL));
-
-
+    
     char randchar = 'A' + (random() % 26);
     int randnum = rand();
     float randfloat = rand() / (float)rand();

@@ -12,8 +12,7 @@ int main(){
     if (strcmp(s1, s2) == 0){
         printf("Strings match\n");
     }
-    else 
-    {
+    else{
         printf("Strings differ\n");
     }
     
