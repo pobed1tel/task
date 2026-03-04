@@ -1,3 +1,4 @@
+#define _GNU_SOURCE
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -19,7 +20,7 @@ int main()
     int* numptr = NULL;
     int size = 0;
 
-    for(int i = 0; token != NULL && token != "\n"; i++) {
+    for(int i = 0; token != NULL ; i++) {
         size++;
         numptr = realloc(numptr, size * sizeof(int));
         sscanf(token, "%d", &temp);
@@ -28,21 +29,15 @@ int main()
     }
 
     qsort(numptr, size, sizeof(numptr[0]), comp);
+    int unic_count = 1;
 
-    int uniq_count = 1;
-
-    if (size == 0){
-        uniq_count = 0;
-    }
     for(int i = 0; i < size - 1; i++){
         if(numptr[i] != numptr[i + 1]){
-            uniq_count++;
+            unic_count++;
         }
     }
 
-    printf("%d\n", uniq_count);
+    printf("%d\n", unic_count);
 
-
-    
     return 0;
 }
